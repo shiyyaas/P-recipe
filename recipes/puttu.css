@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+}
+
+.Home , img {
+    height: 32px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    height: 430px;
+}
