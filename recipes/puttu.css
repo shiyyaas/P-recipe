@@ -1,15 +1,165 @@
-body {
-    background-color: lightblue;
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Home , img {
-    height: 32px;
+/* Body Styling */
+
+body {
+    background-color: #f5f5f5;  /* Soft cream */
+    color: #333;  /* Dark slate gray for text */
+    line-height: 1.6;
+    padding: 40px 20px;
+    font-size: 16px;
 }
+
+/* Header Styling */
 
 h1 {
     text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1d4f47; /* Deep teal */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-img {
-    height: 430px;
+/* Accent Color */
+strong {
+    color: #1d4f47;  /* Deep teal for emphasis */
+}
+/* Clear the float after the Home button */
+
+a {
+    display: inline-block;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Home Button Styling */
+
+.Home {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.Home:hover {
+    transform: scale(1.1);
+}
+
+/* Image Container Styling */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Paragraph Styling */
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Strong Tag Styling */
+
+strong {
+    font-size: 1.25rem;
+    color: #2e6e4f;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* List Styling */
+
+ul, ol {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+ul li:nth-child(odd) {
+    color: #888;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+/* Optional Ingredients Section */
+
+ul li.optional {
+    color: #888;
+    font-style: italic;
+}
+
+/* Footer Styling */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Mobile */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        max-width: 80%;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
 }
