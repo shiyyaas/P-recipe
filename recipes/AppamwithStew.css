@@ -36,14 +36,23 @@ h1 {
 }
 
 /* Recipe images */
-img:not(.Home) {
-    width: 90%;
-    max-width: 500px;
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 15px 0;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+ 
 
 /* Paragraph and content container */
 p, ul, ol {
@@ -94,5 +103,14 @@ ul li, ol li {
 
     p, ul, ol, strong, b {
         font-size: 1rem;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row img {
+        max-width: 90%;
     }
 }
