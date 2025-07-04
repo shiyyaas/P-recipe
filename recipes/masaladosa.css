@@ -6,10 +6,19 @@ body {
     height: 32px;
 }
 
-h1 {
+.center {
     text-align: center;
 }
 
-img {
-    height: 430px;
+.dishp {
+    height: 425px;
+    border-radius: 10px;
+    
+}
+.dishp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    transition-timing-function:ease;
+    border-radius: 10px;
 }
