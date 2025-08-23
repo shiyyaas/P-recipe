@@ -1,5 +1,6 @@
 body {
     background-color: #C4A484;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 
 .Home , img {
@@ -24,5 +25,4 @@ body {
 }
 .text {
     margin: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
