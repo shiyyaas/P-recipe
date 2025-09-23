@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/mes/SHIYAS/p-recipebackend
+set -gx VIRTUAL_ENV /home/mes/SHIYAS/Html/P-recipe/p-recipebackend
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
